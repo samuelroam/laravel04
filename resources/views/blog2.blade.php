@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Esto es un {{$id}}</h1>
+    {{$id}}{{$nombre}}
 </body>
 </html>

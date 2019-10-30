@@ -10,6 +10,7 @@
     </head>
     <body>
         <a href="contacto">contacto</a>
-        <a href="blog">blog</a>
+        <a href="blog/2">blog</a>
+        <a href="blog2/4/asdf">blog 2</a>
     </body>
 </html>
