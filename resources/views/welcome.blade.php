@@ -12,5 +12,7 @@
         <a href="contacto">contacto</a>
         <a href="blog/2">blog</a>
         <a href="blog2/4/asdf">blog 2</a>
+        <a href="saludo">saludo</a>
+        <a href="saludoConNombre/tu">saludo con nombre</a>
     </body>
 </html>

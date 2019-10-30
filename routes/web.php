@@ -29,3 +29,7 @@ Route::get('blog2/{id}/{nombre}', function ($id, $nombre) {
 //opcion 2 para patron
 Route::pattern('id','[0-9]+');
 Route::pattern('nombre','[a-zA-Z]+');
+
+Route::get('/saludo', 'SaludoController@saludo')->name('saludo');
+Route::get('/saludoConNombre', 'SaludoController@saludoConNombre')->name('saludoConNombre');
+
