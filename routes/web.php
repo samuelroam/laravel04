@@ -26,3 +26,6 @@ Route::get('blog/{id}', function ($id) {
 Route::get('blog2/{id}/{nombre}', function ($id, $nombre) {
     return view('blog2',['id'=>$id,'nombre'=>$nombre]);
 })->where(array('nombre'=>'[a-zA-Z]+','id'=>'[0-9]+'));
+//opcion 2 para patron
+Route::pattern('id','[0-9]+');
+Route::pattern('nombre','[a-zA-Z]+');
