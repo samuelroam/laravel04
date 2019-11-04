@@ -8,5 +8,6 @@
 </head>
 <body>
     Hola {{$nombre}}!
+    <p><a href="/">Volver al menú de tareas</a></p>
 </body>
 </html>

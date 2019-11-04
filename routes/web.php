@@ -33,3 +33,10 @@ Route::pattern('nombre','[a-zA-Z]+');
 Route::get('/saludo', 'SaludoController@saludo')->name('saludo');
 Route::get('/saludoConNombre', 'SaludoController@saludoConNombre')->name('saludoConNombre');
 
+Route::get('/saludo', 'SaludoController@saludo')->name('saludo');
+Route::get('/saludonombre/{nombre}', 'SaludoController@saludoNombre')->name('saludoNombre');
+Route::get('/saludonombrecolor/{nombre}/{color?}', 'SaludoController@saludoNombreColor')->name('saludoNombreColor');
+
+//----------------tarea 4.3----------------
+Route::get('/formulario', 'SaludoController@formulario')->name('formulario');
+Route::get('mostrarDatos', 'SaludoController@mostrarDatos')->name('mostrarDatos');
