@@ -7,23 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{route('mostrarDatos2')}}" method="POST">
+    <form action="{{route('')}}" method="POST">
         @csrf
         <label>Nombre:</label>
-        <input type="text" name="nombre" value="{{old('nombre')}}" placeholder="Ej: Aitor">
+        <input type="text" name="nombre" placeholder="Ej: Aitor">
         <br>
         <label>Apellido:</label>
         <input type="text" name="apellido" placeholder="Ej: Fernandez">
         <br>
+        <label>Email:</label>
+        <input type="text" name="email" value="{{old('email')}}" placeholder="Ej: Fernandez">
+        <br>
+        <label>Telefono:</label>
+        <input type="text" name="telefono" value="{{old('telefono')}}" placeholder="Ej: Fernandez">
+        <br>
         <input type="submit" value="Saludar en idioams">
     </form>
-    <br>
-    @isset($saludos)
-        @foreach($saludos as $saludo)
-            <div class="title m-b-md">
-                {{$saludo -> saludo}} {{$nombre}}!
-            </div>
-        @endforeach
-    @endisset
 </body>
 </html>

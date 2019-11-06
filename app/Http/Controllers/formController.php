@@ -25,4 +25,19 @@ class formController extends Controller
         $nombre = $request -> input('nombre')." ".$request -> input('apellido');
         return view('formIdiomas',['saludos'=>$saludos,'nombre'=>$nombre]);
     }
+
+
+    public function mostrarFormValidacion(){
+        return view('formValidacion');
+    }
+
+
+    public function storeFormContacto (Request $request){
+        $validatedData = $request->validate([
+            'nombre' => 'required|min:2|max:15',
+            'apellido' => 'required|min:2|max:20|',
+            'email' => 'required|email',
+            'telefono' => 'regex:/?????????'
+        ]);
+    }
 }

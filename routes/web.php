@@ -43,3 +43,6 @@ Route::get('mostrarDatos', 'formController@mostrarDatos')->name('mostrarDatos');
 
 Route::get('formIdiomas', 'formController@mostrarFormIdiomas')->name('formIdiomas');
 Route::post('mostrarDatos2', 'formController@mostrarDatos2')->name('mostrarDatos2');
+
+Route::get('formValidacion', 'formController@mostrarFormIdiomas')->name('formValidacion');
+Route::post('validacion', 'formController@validacion')->name('validacion');
