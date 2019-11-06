@@ -38,5 +38,8 @@ Route::get('/saludonombre/{nombre}', 'SaludoController@saludoNombre')->name('sal
 Route::get('/saludonombrecolor/{nombre}/{color?}', 'SaludoController@saludoNombreColor')->name('saludoNombreColor');
 
 //----------------tarea 4.3----------------
-Route::get('/formulario', 'SaludoController@formulario')->name('formulario');
-Route::get('mostrarDatos', 'SaludoController@mostrarDatos')->name('mostrarDatos');
+Route::get('/formulario', 'formController@formulario')->name('formulario');
+Route::get('mostrarDatos', 'formController@mostrarDatos')->name('mostrarDatos');
+
+Route::get('formIdiomas', 'formController@mostrarFormIdiomas')->name('formIdiomas');
+Route::post('mostrarDatos2', 'formController@mostrarDatos2')->name('mostrarDatos2');

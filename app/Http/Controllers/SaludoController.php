@@ -20,12 +20,5 @@ class SaludoController extends Controller
 
 
 
-    public function formulario(){
-        return view('formulario');
-    }
-    public function mostrarDatos(Request $request){
-        $nombre = $request -> input('nombre');
-        $apellido = $request -> input('apellido');
-        return view('saludoNombre',['nombre'=>$nombre,'apellido'=>$apellido]);
-    }
+    
 }

@@ -24,5 +24,6 @@ por que el que falla es el que tengo que usar?
         <p><a href="{{route('saludoNombre',['nombre' => 'ajuanena'])}}">b) Saludo con nombre</a></p>
         <p><a href="{{route('saludoNombreColor',['nombre' => 'ajuanena','color' =>'FF00FF'])}}">c) Saludo con nombre y color</a></p>
         <p><a href="{{route('formulario')}}">d) formulario</a></p>
+        <p><a href="{{route('formIdiomas')}}">formulario idiomas</a></p>
     </body>
 </html>
